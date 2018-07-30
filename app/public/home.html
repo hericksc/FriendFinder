@@ -13,6 +13,17 @@
 </head>
 
 <body>
+    <style>
+        a {
+            float: right;
+        }
+
+        #api {
+            float: center;
+            margin-left: 150px;
+            height: 20 px;
+        }
+    </style>
 
     <div class="container">
         <div class="jumbotron">
@@ -20,13 +31,35 @@
             <h3>Answer some basic questions.
                 <h3>
                     <h4>Then Find the Friend with the Greatest Capatibilty</h4>
-                    <ref="http://localhost:3000/survey">
+                    <a href="http://localhost:3000/Survey">
                         <button class="btn btn-danger btn-lg">
                             <span class="fa fa-list"></span> Go to Survey</button>
-                        </a>
+                    </a>
 
         </div>
 
-      
+    </div>
+    <div id="api">
+        <div class="row">
+            <a href="http://localhost:3000/api/friends" class="badge badge-primary">API friends Link</a>
+
+        </div>
+        <div class="row">
+                <a href="http://localhost:3000/Survey" class="badge badge-primary">Survey Link</a>
+    
+            </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $(document).on('click', "button", function () {
+                event.preventDefault();
+                console.log("button was clicked");
+
+            });
+        });
+    </script>
+
 
 </body>
