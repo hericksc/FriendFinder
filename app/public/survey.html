@@ -20,7 +20,7 @@
 
 </head>
 <style>
-    .form-group {
+    .dropdown {
         margin-right: 20px;
     }
 </style>
@@ -41,6 +41,8 @@
         </div>
     </form>
     <br>
+
+    <h3>Choose answers below: Strongly Disagree = 1 to Strongly Agree = 5</h3>
     <h4>Question 1</h4>
 
     <p>Generally speaking, you would say that I am a Cool Guy and want to be my Friend</p>
@@ -50,11 +52,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -67,11 +69,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -84,11 +86,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="Strongly Disagree">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -102,11 +104,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -119,11 +121,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
 
@@ -137,11 +139,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -155,11 +157,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -172,11 +174,11 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
+            <a class="dropdown-item" href="#">1</a>
             <a class="dropdown-item" href="#">2</a>
             <a class="dropdown-item" href="#">3</a>
             <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <a class="dropdown-item" href="#">5</a>
         </div>
     </div>
     <br>
@@ -189,11 +191,21 @@
             Select from options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">1.) Strongly Disagree</a>
-            <a class="dropdown-item" href="#">2</a>
-            <a class="dropdown-item" href="#">3</a>
-            <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5.) Strongly Agree</a>
+            <li>
+                <a class="dropdown-item" href="#">1</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">2</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">3</a>
+                <li>
+                    <li>
+                        <a class="dropdown-item" href="#">4</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">5</a>
+                    </li>
         </div>
     </div>
     <br>
@@ -203,36 +215,40 @@
     <button type="button" class="btn btn-primary btn-lg" id="add-btn">Submit</button>
     <script>
         $(document).ready(function () {
-                    
-                    $(document).on('click', "button", function () {
-                        event.preventDefault();
-                        console.log("button was clicked");
 
-                        var survey = {
-                            name: $("#name"),
-                            photo: $("#linkText"),
-                            scores: $("dropdownMenuButton")
+            $(document).on('click', "#add-btn", function () {
+                event.preventDefault();
+                console.log("Submit button was clicked");
 
-                        };
-                        if (survey) {
-                            name = null,
-                                photo = null,
-                                alert("Please fill out the fields")
-                        } else {
-                            $.post("/api/friends", survey)
-                                .then(function (data) {
-                                    console.log(data);
-                                    alert("Added your results")
-                                });
-                        };
+                $(".dropdown-item").on("#dropdownMenuButton", function (event) {
+                    event.preventDefault();
+                    var x = $(event.relatedTarget).text(); // Get the button text
+                    alert("You clicked on: " + x);
+                    // console.log(x);
+                    var survey = {
+                        name: $("#name"),
+                        photo: $("#linkText"),
+                        scores: $("dropdownMenuButton")
 
-
-                    });
-
+                    };
+                    if (survey) {
+                        name = null,
+                            photo = null,
+                            alert("Please fill out the fields")
+                    } else {
+                        $.post("/api/friends", survey)
+                            .then(function (data) {
+                                console.log(survey);
+                                alert("Added your results")
+                            });
+                    };
 
                 });
+            });
 
-                   
+
+
+        });
     </script>
 </body>
 
